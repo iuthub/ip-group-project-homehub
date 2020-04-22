@@ -24,7 +24,7 @@
             <p>
                 Some pafos text
             </p>
-            <button>Start</button>
+            <a class="btn btn-default" href="{{route('list')}}" role="button">Start</a>
         </div>
 
         @endsection
