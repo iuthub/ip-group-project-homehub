@@ -12,4 +12,7 @@ class HomeController extends Controller
     public function list(){
         return view('List');
     }
+    public function reg(){
+        return view('Registration');
+    }
 }

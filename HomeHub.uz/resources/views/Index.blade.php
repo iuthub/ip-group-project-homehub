@@ -10,7 +10,7 @@
                 <input type="password" id="password" value="">
                 <input type="submit" value="Login">
             </form>
-            <button>Register</button>
+            <button><a class="btn" href="{{route('reg')}}" role="button">Register</a></button>
             <br>
         </div>
 

@@ -10,8 +10,14 @@
 </head>
 <body>
         <div class="container-0">
-             <h1>HomeHub</h1>
+             <h1><a href="{{route('/')}}" >HomeHub</a></h1>
+            <div>
+                <p>
+                    Something
+                </p>
+            </div>
                 </div>
+
         @yield('content')
 
 

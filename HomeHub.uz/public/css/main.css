@@ -3,7 +3,6 @@
     text-align: center;
     padding: 10px;
     margin: auto;
-
 }
 
 .container-1{
@@ -59,4 +58,8 @@
     margin:10px;
     flex: 1;
     order:1;
+}
+
+.btn{
+    text-decoration: none;
 }

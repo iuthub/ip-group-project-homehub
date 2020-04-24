@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });*/
-Route::get('/','HomeController@index'); //return main Index.blade.php
+Route::get('/','HomeController@index')->name('/'); //return main Index.blade.php
 Route::get('list','HomeController@list')->name('list'); //return object view List.blade.php
+Route::get('reg','HomeController@reg')->name('reg'); //return object view Registration.blade.php

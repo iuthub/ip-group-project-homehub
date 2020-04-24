@@ -1,6 +1,5 @@
 @extends('layouts.default')
 
-
 @section('content')
     <div class="container-1">
 
