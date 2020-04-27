@@ -15,6 +15,9 @@
                 <p>
                     Something
                 </p>
+                <p>
+                    <a href="{{route('list')}}">List</a>   <a href="{{route('reg')}}">Join Us</a> <a href="{{route('author_list')}}">Settings</a>, <a href="{{route('about_us')}}">About Us</a>
+                </p>
             </div>
                 </div>
 
