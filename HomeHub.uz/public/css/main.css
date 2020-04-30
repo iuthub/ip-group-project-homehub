@@ -1,0 +1,65 @@
+.container-0{
+    border: dashed orange 1px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.container-1{
+    border: dashed red 1px;
+    text-align: right;
+    padding: 10px;
+    margin: auto;
+
+}
+.container-2{
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    border: dashed purple 1px;
+}
+.container-3{
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    border: dashed blue 1px;
+}
+.article{
+    display: flex;
+    border: dashed green 1px;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+}
+.box-1{
+    border: dashed darkgreen 1px;
+    padding: 10px;
+    margin:10px;
+    flex: 1;
+    order:1;
+}
+.box-2{
+    border: dashed darkgreen 1px;
+    padding: 10px;
+    margin:10px;
+    flex: 1;
+    order:1;
+}
+.box-3{
+    border: dashed darkgreen 1px;
+    padding: 10px;
+    margin:10px;
+    flex: 1;
+    order:1;
+}
+.box-4{
+    border: dashed darkgreen 1px;
+    padding: 10px;
+    margin:10px;
+    flex: 1;
+    order:1;
+}
+
+.btn{
+    text-decoration: none;
+}
