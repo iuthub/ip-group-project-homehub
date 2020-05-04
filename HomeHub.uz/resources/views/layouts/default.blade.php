@@ -10,22 +10,17 @@
 </head>
 <body>
         <div class="container-0">
-             <h1><a href="{{route('/')}}" >HomeHub</a></h1>
-            <div>
-                <p>
-                    Something
+
+             <p><a href="{{route('/')}}" >HomeHub</a> <a href="{{route('list')}}">List</a>   <a href="{{route('reg')}}">Join Us</a> <a href="{{route('author_list')}}">Settings</a>, <a href="{{route('about_us')}}">About</a>
                 </p>
-                <p>
-                    <a href="{{route('list')}}">List</a>   <a href="{{route('reg')}}">Join Us</a> <a href="{{route('author_list')}}">Settings</a>, <a href="{{route('about_us')}}">About Us</a>
-                </p>
-            </div>
+
                 </div>
 
         @yield('content')
 
 
         <div class="container-3">
-             <p>footer</p>
+             <p>HomeHub Team 2020</p>
                 </div>
 </body>
 </html>
