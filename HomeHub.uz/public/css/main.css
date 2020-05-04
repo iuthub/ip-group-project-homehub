@@ -1,8 +1,10 @@
 .container-0{
     border: dashed orange 1px;
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 100px;
     margin: auto;
+    background-image: url("/img/blog-background.jpg");
+    Background-size: cover;
 }
 
 .container-1{
