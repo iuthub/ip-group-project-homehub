@@ -2,11 +2,121 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a83ea87f-d708-41a6-8097-cfb41a4a2ed2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/AboutUs.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/Author_List.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeHub.uz/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeHub.uz/resources/views/layouts/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/layouts/default.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeHub.uz/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/main.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/pages/about.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/pages/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/pages/editpost.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/pages/posts.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/pages/signin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/pages/signup.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeHub.uz/resources/views/pages/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ip-group-project-homehub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ip-group-project-homehub.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/Images/blog-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/app/Http/Controllers/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/bootstrap/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/.styleci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/cors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/hashing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/logging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/database/factories/UserFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/resources/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/resources/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/routes/console.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/storage/framework/cache/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/storage/framework/testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/tests/CreatesApplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/homehub/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/public/img/blog-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/resources/views/AboutUs.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/resources/views/Author_List.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/resources/views/Index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/resources/views/List.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/resources/views/Registration.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/resources/views/layouts/default.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/resources/views/welcome.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeHub.uz/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/HomeHub.uz/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeHub.uz/storage/desktop.ini" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +227,7 @@
       <path value="$PROJECT_DIR$/HomeHub.uz/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/HomeHub.uz/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/HomeHub.uz/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/HomeHub.uz/vendor/twbs/bootstrap" />
     </include_path>
   </component>
   <component name="ProjectId" id="1atSJLQZLUXiSSla2xBhPbfB2lC" />
@@ -132,9 +243,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test.site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HomeHub.uz/resources/views/pages" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ip-group-project-homehub\HomeHub.uz\resources\views\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Xampp\htdocs\ip-group-project-homehub\HomeHub.uz\resources\views\layouts" />
       <recent name="G:\Xampp\htdocs\ip-group-project-homehub\HomeHub.uz\resources\views" />
@@ -157,6 +272,11 @@
       <workItem from="1587553756565" duration="2559000" />
       <workItem from="1587721678583" duration="5935000" />
       <workItem from="1587990909523" duration="1819000" />
+      <workItem from="1588609717674" duration="27000" />
+      <workItem from="1588609746723" duration="17664000" />
+      <workItem from="1588697902875" duration="11107000" />
+      <workItem from="1588714685655" duration="19000" />
+      <workItem from="1588714753686" duration="42000" />
     </task>
     <servers />
   </component>
@@ -175,17 +295,27 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="402" y="0" key="#php56/Dockerfile/0.0.1366.728@0.0.1366.728" timestamp="1587553824894" />
-    <state x="443" y="133" key="FileChooserDialogImpl" timestamp="1587991733210">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="498" y="151" key="FileChooserDialogImpl" timestamp="1588609742621">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="443" y="133" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587991733210" />
+    <state x="498" y="151" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588609742621" />
     <state x="521" y="291" key="NewPhpFileDialog" timestamp="1587992183431">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="521" y="291" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1587992183431" />
-    <state x="359" y="202" key="com.intellij.ide.util.TipDialog" timestamp="1587990907477">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-183" y="6" key="SettingsEditor" timestamp="1588686905933">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-183" y="6" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588686905933" />
+    <state x="404" y="229" key="com.intellij.ide.util.TipDialog" timestamp="1588714754339">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="359" y="202" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587990907477" />
+    <state x="404" y="229" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588714754339" />
+    <state x="811" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588689022225">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="811" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588689022225" />
   </component>
 </project>
