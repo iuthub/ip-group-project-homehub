@@ -12,18 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
-Route::get('/', function () {
-    return view('welcome');
-});*/
-Route::get('/','HomeController@index')->name('/'); //return main Index.blade.php
-Route::get('list','HomeController@list')->name('list'); //return object view List.blade.php
-Route::get('reg','HomeController@reg')->name('reg'); //return object view Registration.blade.php
-Route::get('about_us','HomeController@about_us')->name('about_us'); //return object view AboutUs.blade.php
+Route::get('signup', 'PagesController@getSignup')->name('signup' );
 
+Route::get('signin', 'PagesController@getSignin')->name('signin' );
 
+Route::get('about', 'PagesController@getAbout')->name('about');
 
-//Authorized routes
+Route::get('/', 'PagesController@getIndex')->name('/');
 
-//TODO devide common user and authors
-Route::get('author_list','HomeController@Author_list')->name('author_list');
+Route::get('dashboard', 'PagesController@getDashboard')->name('dashboard');
+
+Route::get('posts', 'PagesController@getPosts')->name('posts');
+
+Route::get('editpost', 'PagesController@getEditpost')->name('editpost');
