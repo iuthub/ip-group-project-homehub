@@ -19,22 +19,24 @@
 
 
     <body>
+        <div id="app">
 
-        @include('inc.navbar')
+            @include('inc.navbar')
 
-        <div class="container">
+            <div class="container">
+                @include('inc.messages')
+                @yield('content')
+    
+                <hr>
+    
+                <p class="text-center">Copyright HomeHub Team 2020 - All Rights Reserved</p>
+            </div> <!--end of container -->
+    
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
 
-            @yield('content')
-
-            <hr>
-
-            <p class="text-center">Copyright HomeHub Team 2020 - All Rights Reserved</p>
-
-        </div> <!--end of container -->
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+        </div>
     </body>
 </html>
