@@ -12,16 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('signup', 'PagesController@getSignup')->name('signup' );
 
-Route::get('signin', 'PagesController@getSignin')->name('signin' );
-
-Route::get('about', 'PagesController@getAbout')->name('about');
 
 Route::get('/', 'PagesController@getIndex')->name('/');
+Route::get('/about', 'PagesController@getAbout')->name('about');
+Route::get('/dashboard', 'PagesController@getDashboard')->name('dashboard');
+// Create all routes associated with posts
+Route::resource('posts', 'PostsController');
 
-Route::get('dashboard', 'PagesController@getDashboard')->name('dashboard');
-
-Route::get('posts', 'PagesController@getPosts')->name('posts');
-
-Route::get('editpost', 'PagesController@getEditpost')->name('editpost');
