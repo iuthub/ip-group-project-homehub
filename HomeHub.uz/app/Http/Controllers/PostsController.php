@@ -5,16 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Post;
-use DB;
 
 class PostsController extends Controller
 {
 
 
-    public function __construct()
-    {
-        $this->middleware('auth', ['except'=>['index','show']]);
-    }
+   
     /**
      * Display a listing of the resource.
      *
@@ -24,9 +20,6 @@ class PostsController extends Controller
     {
         $posts = Post::orderBy('created_at', 'desc')->paginate(10);
         return view('posts.index')->with('posts', $posts);
-
-        // $posts = DB::select('SELECT * FROM posts');
-        // return view('posts.index')->with('posts', $posts);
     }
 
     /**
@@ -34,6 +27,7 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function create()
     {
         return view('posts.create');
@@ -71,7 +65,7 @@ class PostsController extends Controller
         $post = new Post;
         $post -> title = $request->input('title');
         $post -> body = $request->input('body');
-        $post -> user_id = auth()->user()->id;
+        $post -> user_id = '1'; // change when auth implemented
         $post -> cover_image = $fileNameToStore;
         $post -> save();
 
@@ -100,9 +94,7 @@ class PostsController extends Controller
     {
         $post = Post::find($id);
 
-        if(auth()->user()->id !== $post->user_id){
-            return redirect('/posts')->with('error', 'Please log in!');
-        }
+       
 
         return view('posts.edit')->with('post', $post);
     }
@@ -147,7 +139,7 @@ class PostsController extends Controller
         }
         $post -> save();
 
-        return redirect('/posts')->with('success', 'Post Updated');
+        return redirect('/')->with('success', 'Post Updated');
     }
 
     /**
@@ -159,15 +151,13 @@ class PostsController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
-        if(auth()->user()->id !== $post->user_id){
-            return redirect('/posts')->with('error', 'Please log in!');
-        }
+       
 
         if($post->cover_image != 'noimage.jpg'){
             Storage::delete('public/cover_images/'.$post->cover_image);
         }
 
         $post -> delete(); 
-        return redirect('/posts')->with('success', 'Post Removed');
+        return redirect('/')->with('success', 'Post Removed');
     }
 }

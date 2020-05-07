@@ -2,7 +2,7 @@
 
 @section('content')
     <br>
-    <a href="/posts" class="btn btn-dark">Go Back</a>
+    <a href="/" class="btn btn-primary">Go Back</a>
     <p></p>
 
     <br>
@@ -14,7 +14,7 @@
         {!!$post -> body!!}
     </div>
     <hr>
-    <small>Written on {{$post->created_at}} by {{$post -> user-> name}}</small>
+    <small>Written on {{$post->created_at}}</small>
     <hr>
     @if (!Auth::guest())
 

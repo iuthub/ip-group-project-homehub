@@ -23,7 +23,4 @@
 
     {!! Form::close() !!}
 
-    
-   
-
 @endsection

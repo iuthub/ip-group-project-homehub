@@ -18,6 +18,7 @@
                 <li><a href="/">Home </a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/posts">Blog</a></li>
+                <li><a href="/posts/create">Create Post</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
