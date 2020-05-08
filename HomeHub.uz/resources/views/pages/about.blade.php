@@ -1,9 +1,12 @@
 @extends('main')
     @section('content')
-        <div class="container">
+        <div class="container_about">
             <div class="row">
-                <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate dolores error exercitationem, ratione similique sit? Animi asperiores minus neque placeat quia, repellendus tenetur. Aperiam corporis odit quos vel voluptates?</p>
+                <h1> About Us</h1>
+                <br>
+                <p> Hello there! We are the HomeHub team, founders of this blog and many other attractive projects. HomeHub Blog was developed to support people from variety of backgrounds. </p>
+                <br>
+                <p> We are young and creative students from INHA University in Tashkent. We are here to help bloggers like you to gain an unforgettable experience and knowledge in various spheres. </p>
             </div>
         </div>
     @endsection
