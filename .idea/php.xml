@@ -97,7 +97,9 @@
       <path value="$PROJECT_DIR$/HomeHub.uz/vendor/psr/container" />
       <path value="$PROJECT_DIR$/HomeHub.uz/vendor/twbs/bootstrap" />
       <path value="$PROJECT_DIR$/HomeHub.uz/vendor/laravelcollective/html" />
+
       <path value="$PROJECT_DIR$/HomeHub.uz/vendor/laravel/ui" />
+
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
