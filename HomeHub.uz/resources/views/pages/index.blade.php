@@ -13,7 +13,7 @@
             </div>
         </div> <!-- end of header .row -->
 
-        
+
         <div class="row">
 
 
@@ -22,7 +22,7 @@
 
                 @if (count($posts) > 0)
                 @foreach ($posts as $post)
-                
+
                 <div class="jumbotron">
 
                 <div class="row">
@@ -31,21 +31,21 @@
                     </div>
                     <div class="col-md-8 col-sm-8">
                         <h3><a href="posts/{{$post->id}}">{{$post->title}}</a></h3>
-                        <p><small>Written on {{$post -> created_at}}</small></p>
+                        <p><small>Written on {{$post -> created_at}} by {{$post->user->name}}</small></p>
                         <a href="/posts/{{$post->id}}" class="btn btn-primary">Read More</a>
                         <a href="/posts/{{$post->id}}/edit" class="btn btn-warning">Edit</a>
-                        
+
                             {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                                 {{Form::hidden('_method', 'DELETE')}}
                                 {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                             {!!Form::close()!!}
-                    
+
                     </div>
                     <br>
-                    
+
                 </div>
-              
-                
+
+
                 </div>
                 <hr>
                 @endforeach

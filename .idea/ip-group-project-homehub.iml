@@ -28,6 +28,7 @@
       <excludeFolder url="file://$MODULE_DIR$/HomeHub.uz/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/HomeHub.uz/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/HomeHub.uz/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/HomeHub.uz/vendor/laravel/ui" />
       <excludeFolder url="file://$MODULE_DIR$/HomeHub.uz/vendor/laravelcollective/html" />
       <excludeFolder url="file://$MODULE_DIR$/HomeHub.uz/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/HomeHub.uz/vendor/league/flysystem" />

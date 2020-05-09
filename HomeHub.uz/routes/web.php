@@ -20,3 +20,7 @@ Route::get('/dashboard', 'PagesController@getDashboard')->name('dashboard');
 // Create all routes associated with posts
 Route::resource('posts', 'PostsController');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -50,7 +50,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => 'localhost',
             'port' => '3306',
-            'database' => 'blog',
+            'database' => 'BLOG',
             'username' => 'root',
             'password' => '',
             'unix_socket' => '/Applications/MAMP/tmp/mysql/mysql.sock',

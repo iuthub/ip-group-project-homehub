@@ -10,7 +10,7 @@ class PostsController extends Controller
 {
 
 
-   
+
     /**
      * Display a listing of the resource.
      *
@@ -65,7 +65,7 @@ class PostsController extends Controller
         $post = new Post;
         $post -> title = $request->input('title');
         $post -> body = $request->input('body');
-        $post -> user_id = '1'; // change when auth implemented
+        $post -> user_id = auth()->user()->id;
         $post -> cover_image = $fileNameToStore;
         $post -> save();
 
@@ -94,7 +94,7 @@ class PostsController extends Controller
     {
         $post = Post::find($id);
 
-       
+
 
         return view('posts.edit')->with('post', $post);
     }
@@ -111,7 +111,7 @@ class PostsController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'body' => 'required'
-            
+
         ]);
 
 
@@ -130,7 +130,7 @@ class PostsController extends Controller
         }
 
         //File upload
-   
+
         $post = Post::find($id);
         $post -> title = $request->input('title');
         $post -> body = $request->input('body');
@@ -151,13 +151,13 @@ class PostsController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
-       
+
 
         if($post->cover_image != 'noimage.jpg'){
             Storage::delete('public/cover_images/'.$post->cover_image);
         }
 
-        $post -> delete(); 
+        $post -> delete();
         return redirect('/')->with('success', 'Post Removed');
     }
 }
