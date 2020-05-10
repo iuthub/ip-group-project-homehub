@@ -19,6 +19,7 @@
     @if (!Auth::guest())
         @if (Auth::user()->id == $post->user_id)
                 <a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a>
+                <a href="{{ route('blogLikePost', ['id'=> $post->id]) }}"><img src="/images/like.png" class="like"> {{ count($post->likes) }} </a>
                 {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method'=>'POST', 'class'=>'float-right']) !!}
                 {{Form::hidden('_method', 'DELETE')}}
                 {{Form::submit('Delete', ['class'=>'btn btn-danger'])}}

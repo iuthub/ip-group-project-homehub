@@ -17,6 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@getIndex')->name('/');
 Route::get('/about', 'PagesController@getAbout')->name('about');
 Route::get('/dashboard', 'PagesController@getDashboard')->name('dashboard');
+
+Route::get('/posts/{id}/like', [
+	'uses' => 'PostsController@getLikePost',
+	'as' => 'blogLikePost'
+]);
 // Create all routes associated with posts
 Route::resource('posts', 'PostsController');
 

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Post;
 use App\User;
+use App\Like;
 
 
 
@@ -177,5 +178,12 @@ class PostsController extends Controller
 
         $post -> delete();
         return redirect('/')->with('success', 'Post Removed');
+    }
+
+    public function getLikePost($id) {
+        $post = Post::find($id);
+        $post->likes()->save(new Like());
+
+        return redirect()->back();
     }
 }

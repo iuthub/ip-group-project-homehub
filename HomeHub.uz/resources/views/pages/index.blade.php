@@ -2,7 +2,7 @@
 
     @section('content')
 
-   
+   <p></p>
     <div class="jumbotron p-3 p-md-5 text-black rounded bg-grey">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">Welcome to HomeHub</h1>
@@ -33,6 +33,8 @@
                         <h3><a href="posts/{{$post->id}}">{{$post->title}}</a></h3>
                         <p><small>Written on {{$post -> created_at}}</small></p>
                         <a href="/posts/{{$post->id}}" class="btn btn-primary">Read More</a>
+                        <a class="btn btn-sm btn-outline-secondary" href=""> {{ count($post->likes) }} </a>
+                        <a href="{{ route('blogLikePost', ['id'=> $post->id]) }}"><img src="images/like.png" class="like"></a>
 
                     </div>
                     <br>
