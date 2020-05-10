@@ -161,7 +161,10 @@ class PostsController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
-
+        //Check for correct user
+        if(auth()->user()->id !==$post->user_id){
+            return redirect('/posts')->with('error', "Unauthorized Page");
+        }
 
         if($post->cover_image != 'noimage.jpg'){
             Storage::delete('public/cover_images/'.$post->cover_image);
