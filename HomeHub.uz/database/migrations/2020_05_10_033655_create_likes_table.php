@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddCoverImageToPosts extends Migration
+class CreateLikesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class AddCoverImageToPosts extends Migration
      */
     public function up()
     {
-        Schema::table('posts', function($table){
-            $table->string('cover_image');
+        Schema::create('likes', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->integer('post_id'); 
         });
     }
 
@@ -25,8 +27,6 @@ class AddCoverImageToPosts extends Migration
      */
     public function down()
     {
-        Schema::table('posts', function($table){
-            $table->dropColumn('cover_image');
-        });
+        Schema::dropIfExists('likes');
     }
 }
