@@ -19,6 +19,7 @@
             {{Form::file('cover_image')}}
         </div>
 
+
         {{Form::submit('Submit', ['class'=>'btn btn-success'])}}
 
     {!! Form::close() !!}

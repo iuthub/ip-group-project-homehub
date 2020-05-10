@@ -5,11 +5,24 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Post;
+use App\User;
+
+
+
 
 class PostsController extends Controller
 {
+      /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
-
+     
 
     /**
      * Display a listing of the resource.
@@ -54,7 +67,7 @@ class PostsController extends Controller
             $filename = pathinfo($filenameEXT, PATHINFO_FILENAME);
             //extension
             $extesnion = $request->file('cover_image')->getClientOriginalExtension();
-            $fileNameToStore = $filename . '_' . time() . $extesnion;
+            $fileNameToStore = $filename . '_' . time() .'.'. $extesnion;
             //store file
             $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
 
@@ -93,8 +106,10 @@ class PostsController extends Controller
     public function edit($id)
     {
         $post = Post::find($id);
-
-
+        //Check for correct user
+        if(auth()->user()->id !==$post->user_id){
+            return redirect('/posts')->with('error', "Unauthorized Page");
+        }
 
         return view('posts.edit')->with('post', $post);
     }
@@ -151,7 +166,10 @@ class PostsController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
-
+        //Check for correct user
+        if(auth()->user()->id !==$post->user_id){
+            return redirect('/posts')->with('error', "Unauthorized Page");
+        }
 
         if($post->cover_image != 'noimage.jpg'){
             Storage::delete('public/cover_images/'.$post->cover_image);
